@@ -17,7 +17,7 @@ const app: Application = express(); // Create express application
 const server: http.Server = http.createServer(app);
 const io: Server = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL
+    origin: 'https://tic-tac-toe-ws-client.herokuapp.com/'
   }
 });
 
